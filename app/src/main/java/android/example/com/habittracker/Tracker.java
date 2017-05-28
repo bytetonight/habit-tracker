@@ -60,18 +60,7 @@ public class Tracker {
         return dbHelper.fetchAll();
     }
 
-    /**
-     * This is a a bonus
-     * @return
-     */
-    public Cursor fetchOneById(String needle) {
-        Cursor cursor = dbHelper.getDbReadable().rawQuery(
-                "SELECT * FROM " + HabitContract.HabitEntry.TABLE_NAME + " WHERE " +
-                        HabitContract.HabitEntry._ID + " = ?", new String[]{needle});
 
-
-        return cursor;
-    }
 
     /**
      * Time spans in the past are formatted like "42 minutes ago".

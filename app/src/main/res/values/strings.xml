@@ -2,6 +2,7 @@
     <string name="app_name">HabitTracker</string>
     <string name="save_success">Habit saved with id </string>
     <string name="save_fail">Habit not saved</string>
+    <string name="num_records">Number of records =</string>
     <string-array name="habits">
         <item>Sex</item>
         <item>Drugs</item>

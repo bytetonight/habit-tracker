@@ -26,12 +26,8 @@ public class TrackerActivity extends AppCompatActivity {
         tracker = new Tracker(this);
         tracker.track();
         Cursor results = tracker.fetchAll();
-        Log.v(LOG_TAG, "Number of records = " + String.valueOf(results.getCount()));
+        Log.v(LOG_TAG, getString(R.string.num_records) + String.valueOf(results.getCount()));
         renderTrackerData(results, debugOutputView);
-
-        results = tracker.fetchOneById("1");
-        renderTrackerData(results, debugOutputView);
-
     }
 
 
